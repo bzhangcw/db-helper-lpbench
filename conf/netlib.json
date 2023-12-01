@@ -1,0 +1,43 @@
+{
+  "dataset": "s_netlib",
+  "directory": "results/s_netlib",
+  "methods": [
+    {
+      "name": "google_pdhg_1e-4",
+      "solution_dir": "pdhg_cpp_1e-4",
+      "affix": ".json"
+    },
+    {
+      "name": "google_pdhg_1e-6",
+      "solution_dir": "pdhg_cpp_1e-6",
+      "affix": ".json"
+    },
+    {
+      "name": "google_pdhg_1e-8",
+      "solution_dir": "pdhg_cpp_1e-8",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_4",
+      "solution_dir": "cupdlp_1e-4",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_8",
+      "solution_dir": "cupdlp_1e-8",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_4_jl",
+      "solution_dir": "cupdlp.jl_1e-4",
+      "funcname": "pdlp_julia",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_8_jl",
+      "solution_dir": "cupdlp.jl_1e-8",
+      "funcname": "pdlp_julia",
+      "affix": ".json"
+    }
+  ]
+}
