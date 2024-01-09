@@ -18,16 +18,6 @@
       "affix": ".json"
     },
     {
-      "name": "cupdlp_4",
-      "solution_dir": "cupdlp_1e-4",
-      "affix": ".json"
-    },
-    {
-      "name": "cupdlp_8",
-      "solution_dir": "cupdlp_1e-8",
-      "affix": ".json"
-    },
-    {
       "name": "cupdlp_4_jl",
       "solution_dir": "cupdlp.jl_1e-4",
       "funcname": "pdlp_julia",
@@ -37,6 +27,30 @@
       "name": "cupdlp_8_jl",
       "solution_dir": "cupdlp.jl_1e-8",
       "funcname": "pdlp_julia",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_4_cpu",
+      "solution_dir": "cupdlpcpu_1e-4",
+      "funcname": "cupdlp",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_8_cpu",
+      "solution_dir": "cupdlpcpu_1e-8",
+      "funcname": "cupdlp",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_4",
+      "solution_dir": "cupdlpgpu_1e-4",
+      "funcname": "cupdlp",
+      "affix": ".json"
+    },
+    {
+      "name": "cupdlp_8",
+      "solution_dir": "cupdlpgpu_1e-8",
+      "funcname": "cupdlp",
       "affix": ".json"
     }
   ]

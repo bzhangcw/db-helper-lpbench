@@ -13,7 +13,7 @@ def pdlp_julia_string_to_result(fpath):
         sol_status = content["termination_string"]
         val_primal = stats_conv["primal_objective"]
         val_dual = stats_conv["primal_objective"]
-        name = content["instance_name"].replace("s_pre", "pre").replace("s_", "pre_")
+        name = content["instance_name"]
         return dict(
             iteration_num=stats_solution["iteration_number"],
             res_primal=res_primal.__round__(8),

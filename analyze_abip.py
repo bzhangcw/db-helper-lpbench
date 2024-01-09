@@ -15,7 +15,7 @@ def abip_string_to_result(fpath):
         sol_status = content["status"]
         val_primal = content["pobj"]
         val_dual = content["dobj"]
-        name = fpath.split("/")[-1].split(".")[0].replace("s_pre", "pre")
+        name = fpath.split("/")[-1].split(".")[0]
         return dict(
             iteration_num=content["admm_iter"],
             ipm_num=content["ipm_iter"],
@@ -38,13 +38,7 @@ def abipc_string_to_result(fpath):
         # sol_status = content['status']
         # val_primal = content['pobj']
         # val_dual = content['dobj']
-        name = (
-            fpath.split("/")[-1]
-            .split(".")[0]
-            .replace("s_pre", "pre")
-            .replace("s_", "pre_")
-            .replace("-stat", "")
-        )
+        name = fpath.split("/")[-1].split(".")[0]
         return dict(
             iteration_num=content["InnerIter"],
             ipm_num=content["OuterIter"],

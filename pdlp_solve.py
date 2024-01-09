@@ -98,12 +98,16 @@ def solve_pdhg_lp(A, b, c, lb, mm, tol=1e-08, tm=3600):
     )
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--tol", type=float, default=1e-08)
-parser.add_argument("--solve_tm", type=float, default=3600)
-parser.add_argument("--cross_tm", type=float, default=-1)
-parser.add_argument("--file", type=str, default="")
-parser.add_argument("--output", type=str, default=".")
+parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument("--tol", type=float, default=1e-06, help="tolerance")
+parser.add_argument(
+    "--solve_tm", type=float, default=3600, help="timing for pdlp solve"
+)
+parser.add_argument(
+    "--cross_tm", type=float, default=-1, help="timing for crossover, -1 to disable"
+)
+parser.add_argument("--file", type=str, default="", help="")
+parser.add_argument("--output", type=str, default=".", help="")
 
 
 if __name__ == "__main__":

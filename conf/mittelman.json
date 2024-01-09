@@ -1,4 +1,5 @@
 {
+    "dataset": "mittelman",
     "directory": "lp-test-results/mittelman",
     "methods": [
         {
@@ -17,33 +18,38 @@
             "affix": ".json"
         },
         {
-            "name": "abip_direct_1e-6",
-            "solution_dir": "abip_0_1e-6",
-            "affix": ".json"
-        },
-        {
-            "name": "abip_direct_1e-4",
-            "solution_dir": "abip_0_1e-4",
-            "affix": ".json"
-        },
-        {
-            "name": "abip_c_barrier",
-            "solution_dir": "abipc-3-bar",
-            "affix": ".json"
-        },
-        {
-            "name": "abip_c_4",
-            "solution_dir": "abipc-4",
-            "affix": ".json"
-        },
-        {
-            "name": "abip_c_6",
-            "solution_dir": "abipc-6",
-            "affix": ".json"
-        },
-        {
             "name": "copt_barrier",
             "solution_dir": "copt",
+            "affix": ".json"
+        },
+        {
+            "name": "cupdlp_4_jl",
+            "solution_dir": "cupdlp.jl_1e-4",
+            "funcname": "pdlp_julia",
+            "affix": ".json"
+        },
+        {
+            "name": "cupdlp_8_jl",
+            "solution_dir": "cupdlp.jl_1e-8",
+            "funcname": "pdlp_julia",
+            "affix": ".json"
+        },
+        {
+            "name": "cupdlp_4",
+            "solution_dir": "plc_1e-4",
+            "funcname": "cupdlp",
+            "affix": ".json"
+        },
+        {
+            "name": "cupdlp_8",
+            "solution_dir": "plc_1e-8",
+            "funcname": "cupdlp",
+            "affix": ".json"
+        },
+        {
+            "name": "cupdlp_6",
+            "solution_dir": "plc_1e-6",
+            "funcname": "cupdlp",
             "affix": ".json"
         }
     ]

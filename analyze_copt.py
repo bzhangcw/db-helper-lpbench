@@ -3,13 +3,7 @@ import pandas as pd
 
 
 def copt_string_to_result(fpath):
-    name = (
-        fpath.split("/")[-1]
-        .replace("s_pre", "pre")
-        .replace(".mps", "")
-        .replace(".gz", "")
-        .replace(".json", "")
-    )
+    name = fpath.split("/")[-1].split(".")[0]
     with open(fpath, "r") as f:
         content = json.load(f)
         res_primal = content["PrimalRes"]
